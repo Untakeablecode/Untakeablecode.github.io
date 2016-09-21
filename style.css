@@ -98,7 +98,7 @@ h3
  
  span
  {
-	 color: green;
+	 color: blue;
 	 font-size: 1.15em;
 	 text-transform: uppercase;
  }
@@ -119,10 +119,10 @@ h3
  {
 	 border: 0;
 	 width: 100%;
-	 height: 350px;
+	 height: 550px;
  }
  
- #login
+ #contact
  {
 	 float: right;
  }
@@ -243,4 +243,16 @@ h3
 	font-size: 20px;
 	letter-spacing: 3px;
 	color: #aaa;
+}
+
+#picminimize
+{
+	width: 1333px;
+	height: 487px;
+	
+}
+
+#underline
+{
+	text-decoration: underline;
 }
