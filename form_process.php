@@ -1,13 +1,14 @@
 <?php
 
-$first_name = $_POST['first_name'];
-$last_name = $_POST['last_name'];
+$name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
-$to = "test@email.test";
-$subject = "Bot: New message from your website";
 
-mail ($to, $subject, $message, "From: " . $first_name . $last_name);
+$to = "untakeablemine@gmail.com";
+$subject = "New message from your website";
+$body = "This is an automated message. Do not reply."
+
+mail ($to,$subject,$body);
 echo "Your Message has been sent";
 
 ?>
