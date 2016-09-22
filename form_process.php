@@ -4,7 +4,7 @@ $first_name = $_POST['first_name'];
 $last_name = $_POST['last_name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
-$to = "test@email.test";
+$to = "untakeablemine@gmail.com";
 $subject = "Bot: New message from your website";
 
 mail ($to, $subject, $message, "From: " . $first_name . $last_name);
