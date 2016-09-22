@@ -9,7 +9,7 @@
 	
 	<body>
 		<div>
-			<h1 class="animated fadeInDown">P1,3,and 4</h1>
+			<h1 class="animated fadeInDown">Contact</h1>
 			
 		<p>
 				<ul id="menu">
@@ -17,23 +17,32 @@
 					<li id="items"><a href="p134.html">P1,3,and 4</a></li>
 					<li id="items"><a href="p2.html">P2</a></li>
 					<li id="items"><a href="p5.html">P5</a></li>
-					<li id="contact"><a href="contactform.html">Contact</a></li>
+					<li id="contact"><a href="contact.html">Contact</a></li>
 				</ul>
 			</p>
 		
-		<img src="p1.jpg"
+		<img src="contact.jpg"
 		
 		</div>
 		
 		<div id="main">
-		<p><h2>Helpful Links</h2></p>
+		<p><h2>Email Form</h2></p>
 		
-		<p>Here are some links to help you succeed in this class!</p>
+		<p></p>
 
 		<ul>
-		
-		<iframe seamless frameborder='0' noresize='noresize' src='https://edu.symbaloo.com/embed/7thgrade72' name='_symFrame' scrolling="no"</iframe>
-				
+	
+	<form action="form_process.php" method="post: name="contact_form">
+	<p>*First Name:</p>
+	<input name="first_name" type="text"/>
+	<p>*Last Name:</p>
+	<input name="last_name" type="text"/>
+	<p>*E-Mail:</p>
+	<input name="email" type="text"/>
+	<p>*Your Message:</p>
+	<p><textarea name="message"></textarea>&nbsp;</p>
+	<input type="submit" name="submit" id="submit" value="Submit"/>
+	</form>
 		</ul>
 			
 		</div>
@@ -42,4 +51,3 @@
 		<p id="footer">Copyright &copy; 2016 Mr. Robbibaro</p>
 		</body>
 	</html>
-	
