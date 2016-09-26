@@ -256,3 +256,7 @@ h3
 {
 	text-decoration: underline;
 }
+
+#HCB_comment_box textarea {
+    height:400px;
+  }
