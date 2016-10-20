@@ -255,7 +255,7 @@ h3
   }
  .alert {
     padding: 20px;
-    background-color: #f44336;
+    background-color: #2196F3;
     color: white;
 }
 
@@ -274,3 +274,15 @@ h3
     color: black;
 }
   
+#link {
+    
+     display: inline;
+	 width: none;
+	 font-weight: none;
+	 color: blue;
+	 text-align: none;
+	 padding: none;
+	 text-decoration: none;
+	 text-transform: none;
+    
+}
