@@ -5,6 +5,8 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" type="text/css" href="animate.css">
 		<link rel="shortcut icon" type="image/x-icon" href="iconsci.ico"/>
+        <script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/quiz-1.js"></script>
 	</head>
 	
 	<body>
@@ -69,11 +71,42 @@
       <h2>Quiz</h2>
     </div>
     <div class="modal-body">
-      <p>Still in alpha (click outside of the box to exit, was not intended to do that).</p>
-      <p>Testing<span id="wait">.</span></p>
+        
+     <!-- Copy and paste quizQ1 and rename to the next number. Do the same for the getAnswer variable and Javascript. -->
+        
+        <form name = "quizQ1">
+
+<b>Question 1: Gravity holds together a large collection of stars, gas, and dust. What is responsible for that?</b><br> <br>
+
+<input type = "radio" name = "rad1" onclick = "getAnswer('a')"> Galaxy <br>
+<input type = "radio" name = "rad1" onclick = "getAnswer('b')"> Sun <br>
+<input type = "radio" name = "rad1" onclick = "getAnswer('c')"> Friction <br>
+<input type = "radio" name = "rad1" onclick = "getAnswer('d')"> Wind <br><br><br>
+</form>
+     
+        <form name = "quizQ2">
+
+<b>Question 2: The strength of the force of gravity depends on the the product of the<span id="wait">.</span></b><br> <br>
+
+<input type = "radio" name = "rad1" onclick = "getAnswer2('a')"> Gravity's pull <br>
+<input type = "radio" name = "rad1" onclick = "getAnswer2('b')"> Force of centripetal <br>
+<input type = "radio" name = "rad1" onclick = "getAnswer2('c')"> Masses <br>
+<input type = "radio" name = "rad1" onclick = "getAnswer2('d')"> None of the above <br><br><br>
+</form>
+     
+    <form name = "quizQ3">
+
+<b>Question 3: What is the point in the orbit of a planet, asteroid, or comet at which it is furthest from the sun?</b><br> <br>
+
+<input type="text" id="answerBox" autocomplete="off">
+<p>*Make sure that you start with a capital letter!</p>        
+<button id="checkAnswerBox">Enter</button>
+        
+</form>
+        
     </div>
     <div class="modal-footer">
-      <h3>Lesson: Test</h3>
+      <h3>Lesson: Gravity and the Solar System</h3>
     </div>
   </div>
     
@@ -134,6 +167,42 @@ var dots = window.setInterval( function() {
         wait.innerHTML += ".";
     }, 500);
       
+function getAnswer(input) {
+if (input == "a") {alert ("Great Job! The galaxy holds together a collection of many things.")}
+else {alert ("Sorry that's incorrect, try again...")}
+}
+    
+function getAnswer2(input) {
+if (input == "c") {alert ("Great Job! The amount of gravity that something possesses is proportional to its mass and distance between it and another object.")}
+else {alert ("Sorry that's incorrect, try again...")}
+}
+        
+function getAnswer3(input) {
+if (input == "b") {alert ("Great Job! The amount of gravity that something possesses is proportional to its mass and distance between it and another object.")}
+else {alert ("Sorry that's incorrect, try again...")}
+}
+
+        
+            
+            document.getElementById("checkAnswerBox").onclick = function() {
+                
+                var magicWordEntered = document.getElementById("answerBox").value;
+                
+                var magicWord = "Aphelion";
+                
+                if (magicWordEntered == magicWord) {
+                    
+                    alert("You got it!");
+                    
+                } else {
+                    
+                    alert("Nope, try again!");
+                    
+                }
+                
+            }
+            
+        
 </script>
     
 	<p id="footer"><span title="Christopher A.">Copyright &copy; 2016 Mr. Robbibaro</p></span>
