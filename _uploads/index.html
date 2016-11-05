@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mr. Robbibaro Science!</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="animate.css">
+		<link rel="shortcut icon" type="image/x-icon" href="iconsci.ico"/>
+	</head>
+	
+	<body>
+		<div>
+            
+                       
+            </div>
+			<h1 class="animated fadeInDown">Mr. Robbibaro Science!</h1>
+	
+         
+        
+    <audio>        
+	<source src="!.mp3"></source>
+</audio>
+
+			<p>
+			<ul id="menu">
+					<li id="items"><a href="index.html">Home</a></li>
+					<li id="items"><a href="p134.html">P1,3,and 4</a></li>
+					<li id="items"><a href="p2.html">P2</a></li>
+					<li id="items"><a href="p5.html">P5</a></li>
+					<li id="items"><a href="p6.html">P6 and 7</a></li>
+					<li id="contact"><a href="contactform.html">Contact</a></li>
+			</ul>
+	
+			<div class="background-wrap">
+		
+			<video id="video-bg-elem"preload="auto" autoplay="true" loop="loop" muted="muted">
+				<source src="particles.mp4">
+			</video>
+		</div>
+		
+		<div class="content">
+		<h1 id="go">Imagination is more important than knowledge.</h1>
+		<p id="go">- Albert Einstein</p>
+
+        
+    <form class="form-home-button">
+    <input type="button" id="myBtn" value="Take a Quiz"/>
+</form>    
+            
+            
+            
+            </div>
+            
+		<div id="mainhome">
+			<h2>News</h2>
+			<p id="underline">Science Fair Project</p>
+<p>Due Dec 2</p>
+
+			<p id="underline">Average and Range</p>
+<p>Make sure you have an Average and Range table in your Google document for science fair.</p>
+
+	</div>
+    
+    <div id="myModal" class="modal">
+
+    
+    <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Quiz</h2>
+    </div>
+    <div class="modal-body">
+        
+     <!-- Copy and paste quizQ1 and rename to the next number. Do the same for the getAnswer variable and Javascript. -->
+        
+        <form name = "quizQ1">
+
+<b>Question 1: Gravity holds together a large collection of stars, gas, and dust. What is responsible for that?</b><br> <br>
+
+<input type = "radio" name = "rad1" onclick = "getAnswer('a')"> Galaxy <br>
+<input type = "radio" name = "rad1" onclick = "getAnswer('b')"> Sun <br>
+<input type = "radio" name = "rad1" onclick = "getAnswer('c')"> Friction <br>
+<input type = "radio" name = "rad1" onclick = "getAnswer('d')"> Wind <br><br><br>
+</form>
+     
+        <form name = "quizQ2">
+
+<b>Question 2: The strength of the force of gravity depends on the the product of the<span id="wait">.</span></b><br> <br>
+
+<input type = "radio" name = "rad1" onclick = "getAnswer2('a')"> Gravity's pull <br>
+<input type = "radio" name = "rad1" onclick = "getAnswer2('b')"> Force of centripetal <br>
+<input type = "radio" name = "rad1" onclick = "getAnswer2('c')"> Masses <br>
+<input type = "radio" name = "rad1" onclick = "getAnswer2('d')"> None of the above <br><br><br>
+</form>
+     
+    <form name = "quizQ3">
+
+<b>Question 3: What is the point in the orbit of a planet, asteroid, or comet at which it is furthest from the sun?</b><br> <br>
+
+<input type="text" id="answerBox" autocomplete="off">
+<p>*Make sure that you start with a capital letter!</p>        
+<button id="checkAnswerBox">Enter</button>
+        
+</form>
+        
+    </div>
+    <div class="modal-footer">
+      <h3>Lesson: Gravity and the Solar System</h3>
+    </div>
+  </div>
+    
+    </div>
+<div id="disqus_thread"></div>
+<script>
+
+/**
+ *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+ *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+/*
+var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = '//http-robbscience-tk.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+    <script type="text/javascript">
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+var dots = window.setInterval( function() {
+    var wait = document.getElementById("wait");
+    if ( wait.innerHTML.length > 3 ) 
+        wait.innerHTML = "";
+    else 
+        wait.innerHTML += ".";
+    }, 500);
+      
+function getAnswer(input) {
+if (input == "a") {alert ("Great Job! The galaxy holds together a collection of many things.")}
+else {alert ("Sorry that's incorrect, try again...")}
+}
+    
+function getAnswer2(input) {
+if (input == "c") {alert ("Great Job! The amount of gravity that something possesses is proportional to its mass and distance between it and another object.")}
+else {alert ("Sorry that's incorrect, try again...")}
+}
+        
+function getAnswer3(input) {
+if (input == "b") {alert ("Great Job! The amount of gravity that something possesses is proportional to its mass and distance between it and another object.")}
+else {alert ("Sorry that's incorrect, try again...")}
+}
+
+        
+            
+            document.getElementById("checkAnswerBox").onclick = function() {
+                
+                var magicWordEntered = document.getElementById("answerBox").value;
+                
+                var magicWord = "Aphelion";
+                
+                if (magicWordEntered == magicWord) {
+                    
+                    alert("You got it!");
+                    
+                } else {
+                    
+                    alert("Nope, try again!");
+                    
+                }
+                
+            }
+                        
+</script>
+    
+	<p id="footer"><span title="Christopher A.">Copyright &copy; 2016 Mr. Robbibaro</p></span>
+	</body>
+</html>
