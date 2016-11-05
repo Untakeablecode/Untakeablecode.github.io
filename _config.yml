@@ -2,6 +2,9 @@
 title: Untakeablecode.Github.Io
 timezone: UTC
 collections:
+  homepage:
+    title: Homepage
+    output: true
   posts:
     title: Posts
     output: true
