@@ -2,7 +2,7 @@
 title: Untakeablecode.Github.Io
 timezone: UTC
 collections:
-  homepage:
+  index.html:
     title: Homepage
     output: true
   posts:
