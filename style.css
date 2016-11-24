@@ -199,8 +199,6 @@ h3
  #go
  {
 	text-align: center; 
-	padding-top: 20px /* Without semicolon it makes it look nice! */
-	text-transform: uppercase;
 	color: #00FF00;
  }
  
@@ -235,8 +233,6 @@ h3
  .content h1
  {
 	 text-align: center;
-	 font-size: 05px /* Without semicolon it makes it look nice! */
-	 text-transform: uppercase;
 	 font-weight: 300; 
 	 color: #fff;
 	 padding-top: 15%;
