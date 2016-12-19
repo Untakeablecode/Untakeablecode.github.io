@@ -33,13 +33,13 @@
 			<div class="background-wrap">
 		
 			<video id="video-bg-elem"preload="auto" autoplay="true" loop="loop" muted="muted">
-				<source src="particles.mp4">
+				<source src="backgroundvid.mp4">
 			</video>
 		</div>
 		
 		<div class="content">
-		<h1 id="go">Imagination is more important than knowledge.</h1>
-		<p id="go">- Albert Einstein</p>
+		<h1 id="go">The science of today is the technology of tomorrow</h1>
+		<p id="go">- Edward Teller</p>
 
         
     <form class="form-home-button">
@@ -52,11 +52,11 @@
             
 		<div id="mainhome">
 			<h2>News</h2>
-			<p id="underline">Science Fair Project</p>
-<p>Due Dec 2</p>
+			<p id="underline">New Website Update</p>
+<p>Update Verison: #10.0 - The Fancy Update.</p>
 
-			<p id="underline">Average and Range</p>
-<p>Make sure you have an Average and Range table in your Google document for science fair.</p>
+			<p id="underline">Empty</p>
+<p>Empty is nada, so please fill this in with juicy info. </p>
 
 	</div>
     
@@ -74,27 +74,27 @@
         
         <form name = "quizQ1">
 
-<b>Question 1: Gravity holds together a large collection of stars, gas, and dust. What is responsible for that?</b><br> <br>
+<b>Question 1: A rock formed by the deposition and subsequent cementation of that material at the Earth's surface and within bodies of water. </b><br> <br>
 
-<input type = "radio" name = "rad1" onclick = "getAnswer('a')"> Galaxy <br>
-<input type = "radio" name = "rad1" onclick = "getAnswer('b')"> Sun <br>
-<input type = "radio" name = "rad1" onclick = "getAnswer('c')"> Friction <br>
-<input type = "radio" name = "rad1" onclick = "getAnswer('d')"> Wind <br><br><br>
+<input type = "radio" name = "rad1" onclick = "getAnswer('a')"> Igneous <br>
+<input type = "radio" name = "rad1" onclick = "getAnswer('b')"> Sedimentary <br>
+<input type = "radio" name = "rad1" onclick = "getAnswer('c')"> Metamorphic <br>
+<input type = "radio" name = "rad1" onclick = "getAnswer('d')"> Weathering <br><br><br>
 </form>
      
         <form name = "quizQ2">
 
-<b>Question 2: The strength of the force of gravity depends on the the product of the<span id="wait">.</span></b><br> <br>
+<b>Question 2: The lithosphere is divided into pieces called<span id="wait">.</span></b><br> <br>
 
-<input type = "radio" name = "rad1" onclick = "getAnswer2('a')"> Gravity's pull <br>
-<input type = "radio" name = "rad1" onclick = "getAnswer2('b')"> Force of centripetal <br>
-<input type = "radio" name = "rad1" onclick = "getAnswer2('c')"> Masses <br>
-<input type = "radio" name = "rad1" onclick = "getAnswer2('d')"> None of the above <br><br><br>
+<input type = "radio" name = "rad1" onclick = "getAnswer2('a')"> Major Plates <br>
+<input type = "radio" name = "rad1" onclick = "getAnswer2('b')"> Minor Plates <br>
+<input type = "radio" name = "rad1" onclick = "getAnswer2('c')"> Micro Plates <br>
+<input type = "radio" name = "rad1" onclick = "getAnswer2('d')"> Tectonic Plates <br><br><br>
 </form>
      
     <form name = "quizQ3">
 
-<b>Question 3: What is the point in the orbit of a planet, asteroid, or comet at which it is furthest from the sun?</b><br> <br>
+<b>Question 3: What reverse fault is caused by a type of stress?</b><br> <br>
 
 <input type="text" id="answerBox" autocomplete="off">
 <p>*Make sure that you start with a capital letter!</p>        
@@ -104,7 +104,7 @@
         
     </div>
     <div class="modal-footer">
-      <h3>Lesson: Gravity and the Solar System</h3>
+      <h3>Lesson: Earth's Layers</h3>
     </div>
   </div>
     
@@ -166,17 +166,17 @@ var dots = window.setInterval( function() {
     }, 500);
       
 function getAnswer(input) {
-if (input == "a") {alert ("Great Job! The galaxy holds together a collection of many things.")}
+if (input == "b") {alert ("Great Job! Sedimentary rock is one of the three main rock groups!")}
 else {alert ("Sorry that's incorrect, try again...")}
 }
     
 function getAnswer2(input) {
-if (input == "c") {alert ("Great Job! The amount of gravity that something possesses is proportional to its mass and distance between it and another object.")}
+if (input == "d") {alert ("Great Job! The lithosphere, which is the rigid outermost shell of a planet (the crust and upper mantle), is broken up into tectonic plates.")}
 else {alert ("Sorry that's incorrect, try again...")}
 }
         
 function getAnswer3(input) {
-if (input == "b") {alert ("Great Job! The amount of gravity that something possesses is proportional to its mass and distance between it and another object.")}
+if (input == "c") {alert ("Great Job! The amount of gravity that something possesses is proportional to its mass and distance between it and another object.")}
 else {alert ("Sorry that's incorrect, try again...")}
 }
 
@@ -186,7 +186,7 @@ else {alert ("Sorry that's incorrect, try again...")}
                 
                 var magicWordEntered = document.getElementById("answerBox").value;
                 
-                var magicWord = "Aphelion";
+                var magicWord = "Compressive";
                 
                 if (magicWordEntered == magicWord) {
                     

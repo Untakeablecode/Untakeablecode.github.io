@@ -1,6 +1,6 @@
 html
 {
-	background-color: black;
+	background-color: #06223E;
 }
 
 body
@@ -12,15 +12,14 @@ body
 
 img
 {
-	Width: 100%
+    
 }
 
 h1
 {
 	text-align: center;
-	padding-top: 20px
-	text-transform: uppercase;
 	color: #ffd91e;
+    
 }
 
 h2
@@ -38,7 +37,7 @@ h3
 #main
 {
 	background-color: white;
-	padding: 0em 1em 1em;
+	padding: 0em 10em 1em;
 	padding-top: 10px;
 }
 
@@ -53,7 +52,7 @@ h3
 #footer
 {
 	text-align: center;
-	color: white;
+	color: royalblue;
 	font-size: 0.9em;
 }
 
@@ -129,6 +128,18 @@ h3
 	 text-align:center;
 	 margin-top: 5%;
  }
+
+#sidebar {
+    position: absolute;
+    top: 229px;
+    right: 20px;
+    left: 10px;
+    bottom: 10px;
+    width: 200px;
+    height: 544px;
+    background: white;
+    border-style: solid;
+}
  
  form
  {
@@ -199,7 +210,7 @@ h3
  #go
  {
 	text-align: center; 
-	color: #00FF00;
+	animation: change 3s step-end both;
  }
  
  .background-wrap
@@ -378,3 +389,12 @@ input[type="radio"] {
   left: 30px;
 }
 
+@keyframes change {
+    from { color: orangered }
+    to   { color: green }
+}
+
+.movecover {
+    
+    padding: 35px;
+}
