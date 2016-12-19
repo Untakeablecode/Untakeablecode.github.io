@@ -60,7 +60,7 @@ h3
 {
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
+	padding-bottom: 7px;
 	overflow: hidden;
 }
 
@@ -397,4 +397,17 @@ input[type="radio"] {
 .movecover {
     
     padding: 35px;
+}
+
+ #logo {
+            
+     margin-top: -20px;
+     width: 100px;
+     float: left;
+     margin-right: 8px; 
+    }
+
+#line {
+    
+    border: 2px solid #3E3241;
 }
