@@ -11,18 +11,20 @@
 		<div>
 			<h1 class="animated fadeInDown">Period 2</h1>
             
-            <img id="logo" class="animated slideInLeft" src="robbsciencelogo.png">
+            <img id="logoview" class="animated slideInLeft" src="robbsciencelogo.png">
 			
 		<p>
-				<ul id="menu">
-					<li id="items"><a href="index.html">Home</a></li>
-					<li id="items"><a href="p134.html">P1,3,and 4</a></li>
-					<li id="items"><a href="p2.html">P2</a></li>
-					<li id="items"><a href="p5.html">P5</a></li>
-					<li id="items"><a href="p6.html">P6 and 7</a></li>
-					<li id="contact"><a href="contactform.html">Contact</a></li>
-				</ul>
-			</p>
+      <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="p134.html">P1,3,and 4</a>
+  <a href="p2.html">P2</a>
+  <a href="p5.html">P5</a>
+  <a href="p6.html">P6 and 7</a>
+  <a href="contactform.html">Contact</a>          
+</div>
+</p>
+<span class="navcolor" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 		
 		
 		</div>
@@ -43,7 +45,16 @@
         
         <a href="https://www-k6.thinkcentral.com/content/hsp/science/fusion/fl/grvl/ese_9780547401348_/ebook.html#" target="_blank"><img class="movecover" height="210" width="110" src="6thbook.jpg"></a>
 		</div>
-	
+	<script>
+            
+        function openNav() {
+    document.getElementById("mySidenav").style.width = "200px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+        </script>
 	<div>
 		<p id="footer"><span title="Christopher A.">Copyright &copy; 2017 Mr. Robbibaro</p></span>
 		</body>

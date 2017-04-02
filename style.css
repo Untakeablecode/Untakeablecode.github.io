@@ -1,6 +1,6 @@
 html
 {
-	background-color: #71215F;
+	background-color: #45223C;
 }
 
 body
@@ -8,7 +8,6 @@ body
 	font-family: sans-serif;
 	font-size: 1emm;
 	line-height: 1.5em;
-    cursor: crosshair;
 }
 
 img
@@ -44,10 +43,18 @@ h3
 
 #mainhome
 {
-	background-color: white;
-	padding: 0em 1em 1em;
-	padding-top: 10px;
-	margin:700px 10px 10px 10px;
+	background-color:dimgray;
+	padding: 0em 3em 1em;
+	padding-top: 550px;
+	margin:18px 900px 10px 10px;
+    line-height:20px;
+}
+
+#textnews
+{
+    position: absolute;
+  top: 95px;
+    
 }
 
 #footer
@@ -63,6 +70,12 @@ h3
 	margin: 0;
 	padding-bottom: 7px;
 	overflow: hidden;
+     background-color: #1C9F56;
+    color: white;
+    padding: 1px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
 
 #items
@@ -70,17 +83,6 @@ h3
 	float: left;
 }
 
- a:link, a:visited
- {
-	 display: block;
-	 width: 120px;
-	 font-weight: bold;
-	 color: white;
-	 text-align: center;
-	 padding: 4px;
-	 text-decoration: none;
-	 text-transform: uppercase;
- }
  a:hover, a:active
  {
 	 color: #ff5c2c;
@@ -132,7 +134,7 @@ h3
 
 #sidebar {
     position: absolute;
-    top: 236px;
+    top: 210px;
     right: 20px;
     left: 10px;
     bottom: 10px;
@@ -237,7 +239,9 @@ h3
  .content
  {
 	 position: absolute;
-	 width: 100%;
+     top: -15px;
+     left: 30px;
+	 width: 1750px;
 	 min-height: 100%;
 	 z-index: 1000;
  }
@@ -391,8 +395,10 @@ input[type="radio"] {
 }
 
 @keyframes change {
-    from { color: orangered }
+    from { color: black }
     to   { color: green }
+    to { color: black }
+    /* ment to do that! */
 }
 
 .movecover {
@@ -403,71 +409,68 @@ input[type="radio"] {
  #logo {
             
      margin-top: -20px;
-     width: 100px;
-     float: left;
+     width: 120px;
+     float: right;
+     margin-right: 8px; 
+    }
+
+ #logoview {
+            
+     margin-top: -60px;
+     width: 120px;
+     float: right;
      margin-right: 8px; 
     }
 
 #line {
     
-    border: 2px solid #3E3241;
+    border: 2px solid #7A3241;
 }
 
-.rainbow {
--webkit-animation:rainbow 1s infinite;
--ms-animation:rainbow 1s infinite;
--o-animation:rainbow 1s infinite;
-animation:rainbow 1s infinite;
+body {
+    font-family: "Lato", sans-serif;
 }
-@-webkit-keyframes rainbow {
-0% {color: #ff0000;}
-10% {color: #ff8000;}
-20% {color: #ffff00;}
-30% {color: #80ff00;}
-40% {color: #00ff00;}
-50% {color: #00ff80;}
-60% {color: #00ffff;}
-70% {color: #0080ff;}
-80% {color: #0000ff;}
-90% {color: #8000ff;}
-100% {color: #ff0080;}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100000;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
-@-ms-keyframes rainbow {
-0% {color: #ff0000;}
-10% {color: #ff8000;}
-20% {color: #ffff00;}
-30% {color: #80ff00;}
-40% {color: #00ff00;}
-50% {color: #00ff80;}
-60% {color: #00ffff;}
-70% {color: #0080ff;}
-80% {color: #0000ff;}
-90% {color: #8000ff;}
-100% {color: #ff0080;}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
 }
-@-o-keyframes rainbow {
-0% {color: #ff0000;}
-10% {color: #ff8000;}
-20% {color: #ffff00;}
-30% {color: #80ff00;}
-40% {color: #00ff00;}
-50% {color: #00ff80;}
-60% {color: #00ffff;}
-70% {color: #0080ff;}
-80% {color: #0000ff;}
-90% {color: #8000ff;}
-100% {color: #ff0080;}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
 }
-@keyframes rainbow {
-0% {color: #ff0000;}
-10% {color: #ff8000;}
-20% {color: #ffff00;}
-30% {color: #80ff00;}
-40% {color: #00ff00;}
-50% {color: #00ff80;}
-60% {color: #00ffff;}
-70% {color: #0080ff;}
-80% {color: #0000ff;}
-90% {color: #8000ff;}
-100% {color: #ff0080;}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.navcolor
+{
+    color: darkorange;
 }

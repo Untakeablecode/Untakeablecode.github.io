@@ -5,15 +5,10 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" type="text/css" href="animate.css">
 		<link rel="shortcut icon" type="image/x-icon" href="iconsci.ico"/>
+        <meta name=viewport content='width=700'>
 	</head>
 	
 	<body>
-		<div>
-            
-                       
-            </div>
-	
-         
         
     <audio>        
 	<source src="!.mp3"></source>
@@ -22,31 +17,33 @@
     <img id="logo" class="animated slideInLeft" src="robbsciencelogo.png">
     
 			<p>
-			<ul id="menu">
-					<li id="items"><a href="index.html">Home</a></li>
-					<li id="items"><a href="p134.html">P1,3,and 4</a></li>
-					<li id="items"><a href="p2.html">P2</a></li>
-					<li id="items"><a href="p5.html">P5</a></li>
-					<li id="items"><a href="p6.html">P6 and 7</a></li>
-					<li id="contact"><a href="contactform.html">Contact</a></li>
-			</ul>
-    
-    <hr id="line">
+      <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="p134.html">P1,3,and 4</a>
+  <a href="p2.html">P2</a>
+  <a href="p5.html">P5</a>
+  <a href="p6.html">P6 and 7</a>
+  <a href="contactform.html">Contact</a>          
+</div>
+</p>
+
+<span class="navcolor" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 	
 			<div class="background-wrap">
 		
 			<video id="video-bg-elem"preload="auto" autoplay="true" loop="loop" muted="muted">
-				<source src="rick.mp4">
+				<source src="backgroundvid2.mp4">
 			</video>
 		</div>
 		
 		<div class="content">
-		<h1 class="rainbow">Happy April Fools!</h1>
-		<p class="rainbow">- Rick Astley</p>
+		<h1 id="go">Science is simply common sense at its best</h1>
+		<p id="go">- Thomas Huxley</p>
 
         
     <form class="form-home-button">
-    <input type="button" id="myBtn" value="Play Audio"/>
+    <input type="button" id="myBtn" value="Take a Quiz"/>
 </form>    
             
             
@@ -54,13 +51,16 @@
             </div>
             
 		<div id="mainhome">
+            <div id="textnews">
 			<h2>News</h2>
-			<p id="underline">??? Update</p>
-<p>Update Verison: #??.? - The Fools Update.</p>
-
-			<p id="underline">Empty</p>
-<p>Empty is nada, so please fill this in with juicy info. </p>
-
+                <img height="242" width="335" src="Code.png">
+			<p id="underline">New Website Update</p>
+<p>Update Verison: #11.0 - The Scratch Update.</p>
+                <p>Welcome to the new interface of the Website!</p>
+<p>Please take the time to look around since it will</p>
+                <p>be the last major update.</p>
+                
+                </div>
 	</div>
     
     <div id="myModal" class="modal">
@@ -69,7 +69,7 @@
     <div class="modal-content">
     <div class="modal-header">
       <span class="close">×</span>
-      <h2>Just Kidding, if I put audio there would be Copyright issues!</h2>
+      <h2>Quiz</h2>
     </div>
     <div class="modal-body">
         
@@ -77,27 +77,27 @@
         
         <form name = "quizQ1">
 
-<b>Question 1: What is Rick's middle name? </b><br> <br>
+<b>Question 1: A rock formed by the deposition and subsequent cementation of that material at the Earth's surface and within bodies of water. </b><br> <br>
 
-<input type = "radio" name = "rad1" onclick = "getAnswer('a')"> Astley <br>
-<input type = "radio" name = "rad1" onclick = "getAnswer('b')"> Paul <br>
-<input type = "radio" name = "rad1" onclick = "getAnswer('c')"> Willows <br>
-<input type = "radio" name = "rad1" onclick = "getAnswer('d')"> None <br><br><br>
+<input type = "radio" name = "rad1" onclick = "getAnswer('a')"> Igneous <br>
+<input type = "radio" name = "rad1" onclick = "getAnswer('b')"> Sedimentary <br>
+<input type = "radio" name = "rad1" onclick = "getAnswer('c')"> Metamorphic <br>
+<input type = "radio" name = "rad1" onclick = "getAnswer('d')"> Weathering <br><br><br>
 </form>
      
         <form name = "quizQ2">
 
-<b>Question 2: I'm Rick Harrison, and this is my<span id="wait">.</span></b><br> <br>
+<b>Question 2: The lithosphere is divided into pieces called<span id="wait">.</span></b><br> <br>
 
-<input type = "radio" name = "rad1" onclick = "getAnswer2('a')"> Supermercado <br>
-<input type = "radio" name = "rad1" onclick = "getAnswer2('b')"> History <br>
-<input type = "radio" name = "rad1" onclick = "getAnswer2('c')"> Biscuit <br>
-<input type = "radio" name = "rad1" onclick = "getAnswer2('d')"> Pawn Shop <br><br><br>
+<input type = "radio" name = "rad1" onclick = "getAnswer2('a')"> Major Plates <br>
+<input type = "radio" name = "rad1" onclick = "getAnswer2('b')"> Minor Plates <br>
+<input type = "radio" name = "rad1" onclick = "getAnswer2('c')"> Micro Plates <br>
+<input type = "radio" name = "rad1" onclick = "getAnswer2('d')"> Tectonic Plates <br><br><br>
 </form>
      
     <form name = "quizQ3">
 
-<b>Question 3: What month is it?</b><br> <br>
+<b>Question 3: What reverse fault is caused by a type of stress?</b><br> <br>
 
 <input type="text" id="answerBox" autocomplete="off">
 <p>*Make sure that you start with a capital letter!</p>        
@@ -107,7 +107,7 @@
         
     </div>
     <div class="modal-footer">
-      <h3>Lesson: ???</h3>
+      <h3>Lesson: Earth's Layers</h3>
     </div>
   </div>
     
@@ -169,18 +169,18 @@ var dots = window.setInterval( function() {
     }, 500);
       
 function getAnswer(input) {
-if (input == "b") {alert ("😮 Did you search on Google? Don't worry I did the same thing.")}
-else {alert ("You do know there is a thing called Google. (Wrong)")}
+if (input == "b") {alert ("Great Job! Sedimentary rock is one of the three main rock groups!")}
+else {alert ("Sorry that's incorrect, try again...")}
 }
     
 function getAnswer2(input) {
-if (input == "d") {alert ("😏 I was sure I was going to stump you on this question, maybe this was your last choice.")}
-else {alert ("Don't try to inspect away! (Wrong)")}
+if (input == "d") {alert ("Great Job! The lithosphere, which is the rigid outermost shell of a planet (the crust and upper mantle), is broken up into tectonic plates.")}
+else {alert ("Sorry that's incorrect, try again...")}
 }
         
 function getAnswer3(input) {
-if (input == "c") {alert ("Hi CHEATER!!! I see that your trying to find the answers. Please tell me the secret word: Save")}
-else {alert ("Error 007 - Report to Owner")}
+if (input == "c") {alert ("Great Job! The amount of gravity that something possesses is proportional to its mass and distance between it and another object.")}
+else {alert ("Sorry that's incorrect, try again...")}
 }
 
         
@@ -189,20 +189,28 @@ else {alert ("Error 007 - Report to Owner")}
                 
                 var magicWordEntered = document.getElementById("answerBox").value;
                 
-                var magicWord = "March";
+                var magicWord = "Compressive";
                 
                 if (magicWordEntered == magicWord) {
                     
-                    alert("💯 Good for you!");
+                    alert("You got it!");
                     
                 } else {
                     
-                    alert("We need to have a serious talk if you got this question wrong.");
+                    alert("Nope, try again!");
                     
                 }
                 
             }
-                        
+             
+            function openNav() {
+    document.getElementById("mySidenav").style.width = "200px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+  
 </script>
     
 	<p id="footer"><span title="Christopher A.">Copyright &copy; 2017 Mr. Robbibaro</p></span>
