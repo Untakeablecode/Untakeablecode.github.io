@@ -29,7 +29,7 @@
 </div>
 </p>
 
-<span class="navcolor" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<span class="navcolor" style="font-size:30px;cursor:wait" onmouseover="openNav()">&#9776;</span>
 	
 			<div class="background-wrap">
 		
@@ -54,12 +54,12 @@
 		<div id="mainhome">
             <div id="textnews">
 			<h2>News</h2>
-                <img height="242" width="335" src="Code.png">
-			<p id="underline">New Website Update</p>
-<p>Update Verison: #11.2 - The Scratch Update.</p>
-                <p>Welcome to the new interface of the Website!</p>
-<p>Please take the time to look around since it will</p>
-                <p>be the last major update.</p>
+                <img height="242" width="335" src="mobile.png">
+			<p id="underline">Mobile Version Coming Soon...</p>
+<p>Update Verison: #11.3 - The Scratch Update.</p>
+                <p>Since the new update mobiles were having</p>
+<p>issues to display the website, in the upcoming</p>
+                <p>updates there will be a mobile version of robbscience.</p>
                 
                 </div>
 	</div>
@@ -212,6 +212,10 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
   
+        if (screen.width <= 720) {
+        window.location = "mobile/index.html";
+    }
+        
 </script>
     
 	<p id="footer"><span title="Christopher A.">Copyright &copy; 2017 Mr. Robbibaro</p></span>

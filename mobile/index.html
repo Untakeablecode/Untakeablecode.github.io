@@ -1,0 +1,54 @@
+<html>
+
+    <head>
+    <title>Mr. Robbibaro Science!</title>
+		<link rel="stylesheet" type="text/css" href="style.css"  >
+		<link rel="stylesheet" type="text/css" href="/animate.css">
+		<link rel="shortcut icon" type="image/x-icon" href="/iconsci.ico"/>
+        <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+        <meta name=viewport content='width=700'>
+    </head>
+    
+    
+        <body>
+            
+    <img id="logo" src="/robbsciencelogo.png">
+    <h1>Robbscience <span id="lite">Lite</span></h1> 
+   
+    <p>Welcome to the Mobile version of Robbscience.</p>
+    <p class="content"><q>It weighs like a feather.</q></p>
+   
+            <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="/p134.html">P1,3,& 4</a>
+    <a href="/p2.html">P2</a>
+    <a href="/p5.html">P5</a>
+    <a href="/p6.html">P6 & 7</a>
+  </div>
+</div>
+            <script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+    
+    <p id="footer"><span title="Christopher A.">Copyright &copy; 2017 Mr. Robbibaro</p></span>
+        </body>
+</html>
